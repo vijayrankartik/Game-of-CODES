@@ -63,7 +63,7 @@ function codeblast_enter(username, room) {
   socket.on("start_contest", (problems) => {
     // console.log("hey");
     // load_kkk.classList.add('disapper');
-    document.querySelector(".chat-container").remove();
+    //document.querySelector(".chat-container").remove();
     // setTimeout(() => {
     load_kkk.classList.add("disapper");
     // }, 2000);
@@ -83,7 +83,7 @@ function codeblast_enter(username, room) {
 
   socket.on('takeHimIn',problems=>{
     problem=problems;
-    document.querySelector(".chat-container").remove();
+    //document.querySelector(".chat-container").remove();
     load_kkk.classList.add("disapper");
     document.querySelector(".updateCodeblast").classList.remove("hidden");
     display_problems(problems);
@@ -273,4 +273,16 @@ function codeblast_enter(username, room) {
     }, 1000);
   }
 
+}
+
+
+
+/* Open the sidenav */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
